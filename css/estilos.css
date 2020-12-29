@@ -164,6 +164,10 @@ h1{
   text-shadow: 0 0 5px #C8C8C8;
 }
 
+#respuesta:focus{
+  outline: none;
+}
+
 #puntero{
 
 }
