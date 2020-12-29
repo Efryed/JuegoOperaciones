@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./css/estilos.css">
+  </head>
+  <body>
+    <main id="app">
+      <div id="principal">
+        <h1>Operaciones</h1>
+        <div>
+          <div id="tabla-puntajes">
+            <div>
+              <p>Suma</p>
+              <p id="puntaje-suma">00</p>
+            </div>
+            <div>
+              <p>Resta</p>
+              <p id="puntaje-resta">00</p>
+            </div>
+            <div>
+              <p>Multiplicación</p>
+              <p id="puntaje-multiplicacion">00</p>
+            </div>
+            <div>
+              <p>División</p>
+              <p id="puntaje-division">00</p>
+            </div>
+            <div>
+              <p>Aleatorio</p>
+              <p id="puntaje-aleatorio">00</p>
+            </div>
+          </div>
+          <!-- <p id="puntaje">00</p> -->
+          <div class="btn">
+            <p id="btn-play">Jugar</p>
+          </div>
+
+          <div id="modo-juego" style="display: none">
+            <div class="btn">
+              <p op='1'>Suma</p>
+            </div>
+            <div class="btn">
+              <p op='2'>Resta</p>
+            </div>
+            <div class="btn">
+              <p op='3'>Multiplicación</p>
+            </div>
+            <div class="btn">
+              <p op='4'>División</p>
+            </div>
+            <div class="btn">
+              <p op='5'>Aleatorio</p>
+            </div>
+            <div class="btn">
+              <p op='6'>Volver</p>
+            </div>
+          </div>
+
+          <!-- <button ></button> -->
+        </div>
+
+      </div>
+      <div id="game">
+        <div id="status">
+          <ul>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+          </ul>
+          <p id="puntos">00</p>
+          <p id="time">00</p>
+        </div>
+        <p id="operacion">5+5</p>
+        <form>
+          <label for="respuesta">
+            > <input autocomplete="off" type="text" name="" value="" id="respuesta">
+          </label>
+          <div class="btn" id="respuesta-correcta" style="display:none">
+            <p>Error: 12</p>
+          </div>
+          <div class="btn" id="comprobar">
+            <p>Comprobar</p>
+          </div>
+          <div class="btn" id="volver">
+            <p>Menú</p>
+          </div>
+          <div class="btn" id="reiniciar">
+            <p>Reintentar</p>
+          </div>
+        </form>
+      </div>
+      <script src="./js/guardado_puntaje.js" charset="utf-8"></script>
+      <script src="./js/cronometro.js" charset="utf-8"></script>
+      <script src="./js/app.js" charset="utf-8"></script>
+    </main>
+  </body>
+</html>
