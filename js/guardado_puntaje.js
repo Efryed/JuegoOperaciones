@@ -21,7 +21,7 @@ var puntaje = {
 }
 
 function guardarDatosLocalStorage(){
-  localStorage.setItem('data',JSON.stringify(puntaje));
+  localStorage.setItem('puntos',JSON.stringify(puntaje));
 }
 
 function optenerDatosLocalStorage(){
