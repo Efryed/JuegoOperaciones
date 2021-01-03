@@ -25,7 +25,7 @@ function guardarDatosLocalStorage(){
 }
 
 function optenerDatosLocalStorage(){
-  if(localStorage.getItem("data")){
+  if(localStorage.getItem("puntos")){
     let data = JSON.parse(localStorage.getItem("puntos"));
     puntaje = data;
     displayP[1].innerText = formatoNumero(data[1]);
