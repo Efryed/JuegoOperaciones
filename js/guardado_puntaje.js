@@ -21,12 +21,12 @@ var puntaje = {
 }
 
 function guardarDatosLocalStorage(){
-  localStorage.setItem('data',JSON.stringify(puntaje));
+  localStorage.setItem('puntos',JSON.stringify(puntaje));
 }
 
 function optenerDatosLocalStorage(){
-  if(localStorage.getItem("data")){
-		let data = JSON.parse(localStorage.getItem("data"));
+  if(localStorage.getItem("puntos")){
+    let data = JSON.parse(localStorage.getItem("puntos"));
     puntaje = data;
     displayP[1].innerText = formatoNumero(data[1]);
     displayP[2].innerText = formatoNumero(data[2]);
@@ -34,7 +34,7 @@ function optenerDatosLocalStorage(){
     displayP[4].innerText = formatoNumero(data[4]);
     displayP[5].innerText = formatoNumero(data[5]);
 	}else{
-    localStorage.setItem('data',JSON.stringify(puntaje));
+    localStorage.setItem('puntos',JSON.stringify(puntaje));
   }
 }
 
